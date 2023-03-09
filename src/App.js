@@ -16,6 +16,18 @@ function App() {
       setTodo("")
      return 
   }
+
+  const remove = (index) =>{
+     
+    // The filter is not working help me out with this
+    settodoList(todoList.filter((item) => item !== todoList[index]));
+    console.log(settodoList);
+  }
+
+  const edit = (index) =>{
+
+    alert("Arul-"+index);
+  }
   console.log(todoList);
   
   return (
@@ -34,8 +46,12 @@ function App() {
        
         
       </header>
- 
-      <ToDoList text= {todoList} /> 
+      
+          <ToDoList edit={edit} remove={remove} text= {todoList}  /> 
+        
+        
+      
+      
      
     </div>
   );

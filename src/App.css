@@ -35,9 +35,15 @@
     
 }
 .list{
+  display: flex;
+  justify-content: space-between;
   border: 2px solid;
   text-align: center;
   list-style: none;
   width: 40%;
   margin: auto;
+}
+.buttons{
+  display: flex;
+  
 }
